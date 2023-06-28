@@ -1,0 +1,97 @@
+* {
+    border-collapse: collapse;
+}
+
+#menu {
+    color: white;
+    height: 200px;
+}
+
+#menuTable {
+    text-align: center;
+    border: medium solid black;
+    width: 100%;
+    border-collapse: collapse;
+    height: 500px;
+}
+
+
+#Introduction {
+    height: 100;
+    width: 25%;
+    border: medium solid black;
+}
+
+#Information {
+    height: 100;
+    width: 25%;
+    border: medium solid black;
+}
+
+#TermsOfService {
+    height: 100;
+    width: 25%;
+    border: medium solid black;
+}
+
+#JumpToSomewhere {
+    height: 100;
+    width: 25%;
+    border: medium solid black;
+}
+
+#menuTable {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+#IntroductionSection {
+    text-align: center;
+    color: white;
+    height: auto;
+}
+
+#introductionText {
+
+    text-align: left;
+    width: 95%;
+}
+
+#swim {
+    height: 250px;
+    float: right;
+    margin-left: 20px;
+}
+
+p a {
+    color: white;
+}
+
+.textWall {
+    font-size: 100%;
+}
+
+.textWall:first-letter {
+    font-size: 130%;
+}
+
+#secondSection {
+    background-color: black;
+    border-color: white;
+    text-align: left;
+    height: auto;
+}
+
+#secondSection h1 {
+    text-align: center;
+    font-size: 180%;
+}
+
+
+@media print {
+    html {
+        font-family: 'Times New Roman', serif;
+        font-size: 12px;
+    }
+}

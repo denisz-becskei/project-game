@@ -1,0 +1,93 @@
+h1,
+h5,
+h3,
+div,
+table,
+form {
+    color: white;
+}
+
+#orderRegister {
+    height: auto;
+    border: 1px solid black;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+
+#tablazat {
+    text-align: left;
+}
+
+#firstStepId {
+    height: auto;
+    border: 1px solid black;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#firstStepJPG {
+    margin: 0 0 0 300;
+}
+
+#footerId {
+    padding: 100 0;
+}
+
+:required {
+    color: #0000AA;
+}
+
+input:focus {
+    color: purple;
+}
+
+.compulsory {
+    color: red;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.labelFelirat {
+    color: white;
+}
+
+.link:hover {
+    color: blue;
+}
+
+:checked {
+    color: red;
+}
+
+.link {
+    color: white;
+}
+
+input[type=reset],
+input[type=submit] {
+    color: #4444FF;
+}
+
+input:focus {
+    background-color: #CCCCCC;
+}
+
+#separateOrder {
+    background-image: linear-gradient(#2e2d51, #531268, #22c2ce);
+}
+
+@media print {
+	html {
+		font-family: 'Times New Roman', serif;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,44 @@
+.divConfig {
+    background-color: #eee;
+    width: 25%;
+    text-align: center;
+    padding-top: 10px;
+    border-left: 2px solid black;
+    border-right: 1px solid black;
+}
+
+.divConfig img {
+    border: 2px solid black;
+    transform: translate(0,0);
+    transition: 0.35s;
+    box-shadow: none;
+}
+
+.divConfig img:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px black;
+}
+
+main img {
+    height: 300px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px black solid;
+    margin: 0 auto
+}
+
+article div h3[data-row] {
+    padding-bottom: 1.17em;
+    /*1.17em default h3 font size*/
+}
+
+@media print {
+	html {
+		font-family: 'Times New Roman', serif;
+		font-size: 12px;
+	}
+}

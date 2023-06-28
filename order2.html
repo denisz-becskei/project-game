@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lorem Ipsum - Register</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/order.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="bodyId">
+    <header>
+        <nav>
+            <div id="containerNav">
+                <div>
+                    <ul id="left">
+                        <li><a href="index.html">home>></a></li>
+                        <li><a href="games.html">catalogue>></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="images/logo_1.png" alt="logo" id="logo">
+                </div>
+                <div>
+                    <ul id="right">
+                        <li class="currentlyOn">order>></li>
+                        <li id="abtUs"><a href="aboutus.html">about us>></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <a href="feedback.html"><img src="images/feedback.png" alt="feedback" id="feedbackIcon"></a>
+        </div>
+        <section id="fejlec">
+            <div id="title">
+                <h1>Lorem Ipsum</h1>
+                <h2>The Best Online Game Store in The Universe</h2>
+            </div>
+        </section>
+    </header>
+    <main id="mainId">
+        <section id="orderRegister">
+            <h1>Before placing your order, you have to register!</h1>
+            <h5>
+                If you are already registered, click <a class="link" href="#registeredOrder"> here</a>!
+                <!-- ide majd kell egy link az orderre -->
+                If not, follow these steps and create an account or order instantly <a class="link"
+                    href="#instantOrder">here</a>!
+            </h5>
+
+        </section>
+
+        <section id="firstStepId">
+
+
+            <form autocomplete="on" method="get">
+                <fieldset>
+
+                    <legend>
+                        <h3>1.Step: Essential data</h3>
+
+                    </legend>
+                    <label for="FirstName">First Name:</label>
+                    <input required type="text" id="FirstName" maxlength="20" size="20" />
+                    <label for="LastName">Last Name:</label>
+                    <input required type="text" id="LastName" maxlength="20" size="20" />
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <label for="EmailAddress">Email address:</label>
+                    <input required type="email" id="EmailAddress" maxlength="50" size="40"
+                        placeholder="example.address@loremipsum.com" />
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <label for="UserName">Username:</label>
+                    <input required type="text" id="UserName" maxlength="20" size="20" />
+
+                    <label for="Password">Password:</label>
+                    <input required type="password" id="Password" maxlength="20" size="25" />
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <label for="language">Language:</label>
+                    <select required id="language">
+                        <option disabled value="">
+                            -
+                        </option>
+                        <option value="hu">
+                            Hungarian
+                        </option>
+                        <option selected value="en">
+                            English
+                        </option>
+                        <option value="ge">
+                            German
+                        </option>
+                    </select>
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+                    <hr />
+
+                    <div>
+                        <p>Your credit card informations are necessary for the successful registration, and it is
+                            mandatory for further orders.</p>
+                        <p>That's why it is recommended to register, so later you could place your order more conveniently.
+                        </p>
+                    </div>
+
+                    <hr />
+
+                    <label for="cardOwner">Card owner's full name:</label>
+                    <input type="text" required id="cardOwner" maxlength="40" size="40"
+                        placeholder="Benedict Cumberbatch" />
+
+                    <br />
+
+                    <label for="cardOwner">Card number:</label>
+                    <input required type="number" id="cardOwner2" placeholder="1234987623458765" />
+
+                    <br />
+
+                    <label>
+                        Expiration date:
+                    </label>
+                    <input required type="number" max="2" placeholder="01" />/<input required type="number" max="2"
+                        placeholder="22" />
+
+
+                    <br />
+
+                    <label for="CVV">CVV:</label>
+                    <input required type="password" id="CVV" placeholder="012" />
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+
+
+                    <input required type="checkbox" id="Agree" />
+                    <label for="Agree">With checking this box you aggree to our <a class="link"
+                            href="aboutus.html">Terms of Service</a>.</label>
+                    <!--ide kell majd a link a about us oldalra-->
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <input type="submit" value="Finish Registration Without Step 2" />
+
+                    <br />
+
+                    <!--<input type="reset" value="Reset Step 1 and 2" />-->
+
+                </fieldset>
+
+
+
+
+
+                <div>
+                    <p class="compulsory">The elements above are compulsory, they are required for the register to
+                        complete!</p>
+                </div>
+
+
+                <fieldset>
+                    <legend>
+                        <h3>2.Step: Optional data</h3>
+                    </legend>
+
+                    <label for="MobileNumber">Mobile number:</label>
+                    <input type="tel" id="MobileNumber" size="13" placeholder="+36223334444" />
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <label for="BirthDate">Birth date:</label>
+                    <input type="date" id="BirthDate" size="20" />
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <label>Gender:</label>
+                    <label for="Gender1">Male</label>
+                    <input type="radio" name="Gender" id="Gender1" />
+
+                    <label for="Gender2">Female</label>
+                    <input type="radio" name="Gender" id="Gender2" />
+
+                    <label for="Gender3">Apache helicopter</label>
+                    <input type="radio" name="Gender" id="Gender3" />
+
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <label for="mention">Short introduction of yourself:</label>
+                    <input type="text" id="mention" maxlength="2000" size="60"
+                        placeholder="Favorite food, hobbies, pets etc." />
+
+                    <br />
+
+                    <input name="save2" type="submit" value="Finish Registration" />
+
+                    <br />
+
+                    <input type="reset" value="Reset All Above" />
+
+                </fieldset>
+            </form>
+
+            <form autocomplete="on" method="post">
+                <fieldset>
+                    <legend>
+                        <h3>3.Step: Placing Order</h3>
+                    </legend>
+
+                    <div>
+                        <h3>With account registered</h3>
+                    </div>
+
+                    <label for="UserName">Username:</label>
+                    <input id="registeredOrder" required type="text" name="UserName" maxlength="20" size="20" />
+
+                    <label for="Password">Password:</label>
+                    <input required type="password" name="Password" maxlength="20" size="25" />
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <select required multiple id="gameSelect">
+                        <option>ABZÛ</option>
+                        <option>Battlefield 1</option>
+                        <option>Child of Light</option>
+                        <option>Dead Rising 3</option>
+                        <option>Deus Ex: Human Revolution</option>
+                        <option>Firewatch</option>
+                        <option>Garry's Mod</option>
+                        <option>Grand Theft Auto V</option>
+                        <option>Mass Effect</option>
+                        <option>Mass Effect 2</option>
+                        <option>Mass Effect 3</option>
+                        <option>Metro: Last Light</option>
+                        <option>Minecraft: Java Edition</option>
+                        <option>Mirror's Edge</option>
+                        <option>Mortal Kombat X</option>
+                        <option>Ori and The Will of The Wisps</option>
+                        <option>Overwatch</option>
+                        <option>Papers, Please</option>
+                        <option>Portal</option>
+                        <option>Portal 2</option>
+                        <option>Shadow of The Tomb Raider</option>
+                        <option>Slender: The Arrival</option>
+                        <option>Minecraft: Java Edition</option>
+                        <option>Mirror's Edge</option>
+                        <option>South Park: The Stick of Truth</option>
+                        <option>Star Wars: Battlefront II</option>
+                        <option>Subnautica</option>
+                        <option>SUPERHOT</option>
+                        <option>Syberia</option>
+                        <option>Syberia 2</option>
+                        <option>The Elder Scrolls V: Skyrim</option>
+                        <option>The Vanishing of Ethan Carter</option>
+                        <option>Undertale</option>
+                        <option>Watch Dogs</option>
+                    </select>
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+                    <label for="discountCode">Discount Code:</label>
+                    <input type="password" id="discountCode" maxlength="10" size="10" placeholder="1Q2W3E4R5T" />
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <input type="submit" value="Order" />
+
+                </fieldset>
+
+
+            </form>
+
+            <form>
+
+
+                <fieldset id="separateOrder">
+                    <legend>
+                        <h3>Separated order</h3>
+                    </legend>
+                    <div>
+                        <h3>Without account registered</h3>
+                    </div>
+
+                    <label for="cardOwner">Card owner's full name:</label>
+                    <input id="instantOrder" required type="text" name="cardOwner" maxlength="40" size="40"
+                        placeholder="Benedict Cumberbatch" />
+
+                    <br />
+                    <input type="hidden" />
+
+                    <label for="cardOwner">Card number:</label>
+                    <input required type="number" name="cardOwner" placeholder="1234987623458765" />
+
+                    <br />
+                    <input type="hidden" />
+
+                    <label>
+                        Expiration date:
+                    </label>
+                    <input required type="number" max="2" placeholder="01" />/<input required type="number" max="2"
+                        placeholder="22" />
+                    <br />
+
+                    <label for="CVV">CVV:</label>
+                    <input required size="1" type="password" id="CVV2" placeholder="012" />
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <label for="EmailAddress">Email address:</label>
+                    <input required type="email" name="EmailAddress" maxlength="50" size="40"
+                        placeholder="example.address@loremipsum.com" />
+
+                    <br />
+
+                    <input type="hidden" />
+
+                    <br />
+
+                    <select required multiple id="gameSelect2">
+                        <option>ABZÛ</option>
+                        <option>Battlefield 1</option>
+                        <option>Child of Light</option>
+                        <option>Dead Rising 3</option>
+                        <option>Deus Ex: Human Revolution</option>
+                        <option>Firewatch</option>
+                        <option>Garry's Mod</option>
+                        <option>Grand Theft Auto V</option>
+                        <option>Mass Effect</option>
+                        <option>Mass Effect 2</option>
+                        <option>Mass Effect 3</option>
+                        <option>Metro: Last Light</option>
+                        <option>Minecraft: Java Edition</option>
+                        <option>Mirror's Edge</option>
+                        <option>Mortal Kombat X</option>
+                        <option>Ori and The Will of The Wisps</option>
+                        <option>Overwatch</option>
+                        <option>Papers, Please</option>
+                        <option>Portal</option>
+                        <option>Portal 2</option>
+                        <option>Shadow of The Tomb Raider</option>
+                        <option>Slender: The Arrival</option>
+                        <option>Minecraft: Java Edition</option>
+                        <option>Mirror's Edge</option>
+                        <option>South Park: The Stick of Truth</option>
+                        <option>Star Wars: Battlefront II</option>
+                        <option>Subnautica</option>
+                        <option>SUPERHOT</option>
+                        <option>Syberia</option>
+                        <option>Syberia 2</option>
+                        <option>The Elder Scrolls V: Skyrim</option>
+                        <option>The Vanishing of Ethan Carter</option>
+                        <option>Undertale</option>
+                        <option>Watch Dogs</option>
+                    </select>
+
+                    <br />
+
+                    <div>
+                        <h5>*Discount codes only work for registered members!</h5>
+                    </div>
+
+                    <br />
+
+                    <input type="submit" value="Order" />
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <form action="#" method="GET">
+                <fieldset>
+                    <legend>
+                        <h3>Subscribe to our newsletter!</h3>
+                    </legend>
+                    <label for="UserEmail">E-mail:</label>
+                    <input required type="email" id="UserEmail" maxlength="24" size="35"
+                        placeholder="example.address@loremipsum.com" />
+                    <input type="submit" value="Subscribe" style="color:black" />
+                </fieldset>
+            </form>
+        </div>
+        <div id="names">
+            <p>Made by:<br> </p>
+            <p>Becskei Denisz</p>
+        </div>
+    </footer>
+</body>
+
+</html>

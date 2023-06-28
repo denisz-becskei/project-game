@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+/*body*/
+body {
+    margin: auto;
+    background-image: linear-gradient(#2e2d51, #531268, #22c2ce);
+    margin-top: 50px;
+    width: 80%;
+    font-family: 'Roboto Mono', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*navigation bar*/
+#containerNav {
+    width: 80%;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #814163;
+    z-index: 100;
+    width: 100%;
+    /*opacity: 0.5;
+    transition: 0.75s;*/
+    animation: navBlinking 3s linear;
+    animation-iteration-count: infinite;
+}
+
+nav:hover {
+    opacity: 1;
+}
+
+nav * {
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+}
+
+nav div {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.currentlyOn {
+    font-weight: bold;
+    cursor: no-drop;
+}
+
+#logo {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    height: 40px;
+}
+
+#left ul li {
+    margin-left: 120px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100px;
+}
+
+#feedbackIcon {
+    position: fixed;
+    top: 0;
+    right: 10%;
+    height: 30px;
+    padding-top: 10px;
+    z-index: 150;
+    animation: navBlinking 3s linear;
+    animation-iteration-count: infinite;
+}
+
+/*sections*/
+section {
+    height: 50vh;
+    border: 1px solid black;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#fejlec {
+    background-image: url('../images/background-header.jpg');
+}
+
+#gameSelection {
+    background-image: url('../images/background-section1.jpg');
+}
+
+#secureTransaction {
+    text-align: right;
+    background-image: url('../images/background-section2.jpg');
+}
+
+#secureTransaction h1,
+p {
+    margin-right: 50px;
+    word-wrap: break-word;
+}
+
+#browseNow {
+    background-image: url('../images/background-section3.jpg');
+    text-align: center;
+    align-content: center;
+}
+
+.allTheDivs {
+    width: 100%;
+}
+
+/*section 1*/
+#title {
+    text-align: right;
+    color: white;
+    margin-top: 10%;
+    margin-right: 50px;
+}
+
+#title>h1 {
+    font-size: 35px;
+}
+
+#title>h2 {
+    font-size: 25px;
+}
+
+/*section 2*/
+main section h1 {
+    text-transform: uppercase;
+}
+
+#mainDiv1 {
+    height: 300px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#mainDiv1 h1 {
+    margin-top: 10%;
+    margin-left: 50px;
+}
+
+#mainDiv1 p {
+    margin-left: 50px;
+}
+
+#collectionImg {
+    height: 300px;
+    position: relative;
+    left: 72%;
+    bottom: 14em;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#collectionImg:hover {
+    transform: scale(1);
+}
+
+/*section 3*/
+#mainDiv2 {
+    height: 300px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#mainDiv2 h1 {
+    margin-top: 10%;
+    margin-right: 50px;
+}
+
+#mainDiv2 p {
+    margin-right: 50px;
+}
+
+#transactionImg {
+    height: 300px;
+    position: relative;
+    right: 70%;
+    bottom: 13em;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#transactionImg:hover {
+    transform: scale(1);
+}
+
+/*section 4*/
+#mainDiv3 {
+    height: 300px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#mainDiv3 h1 {
+    margin-top: 125px;
+    text-align: center;
+}
+
+#mainDiv3 p {
+    transform: translate(0, -30%);
+    margin-left: 50px;
+}
+
+#button {
+    color: #22c2ce;
+    font-size: 18px;
+    text-decoration: none;
+
+    border: solid 2px #22c2ce;
+    border-radius: 25px;
+    padding: 10px 80px;
+
+    position: relative;
+    top: 20px;
+
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+#button:hover {
+    color: white;
+    border: solid 2px white;
+    background-color: #22c2ce;
+}
+
+#middle {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#names {
+    border: 1px solid white;
+    border-radius: 2em 2em 0 0;
+    background-color: rgba(77, 77, 77, 0.95);
+}
+
+/*foot*/
+footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgba(77, 77, 77, 0.85);
+    color: white;
+}
+
+footer div {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1150px) {
+    header>section {
+        height: 300px;
+    }
+
+    #title>h1 {
+        font-size: 25px;
+    }
+
+    #title>h2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header>section {
+        height: 200px;
+    }
+
+    #title>h1 {
+        font-size: 15px;
+    }
+
+    #title>h2 {
+        font-size: 5px;
+    }
+
+    #collectionImg {
+        height: 150px;
+    }
+}
+
+@keyframes navBlinking {
+    0% {
+        opacity: 1;
+    }
+
+    12.5% {
+        opacity: 0.9125;
+    }
+
+    25% {
+        opacity: 0.825;
+    }
+
+    37.5% {
+        opacity: 0.7375;
+    }
+
+    50% {
+        opacity: 0.65;
+    }
+
+    62.5% {
+        opacity: 0.7375;
+    }
+
+    75% {
+        opacity: 0.825;
+    }
+
+    87.5% {
+        opacity: 0.9125;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@media print {
+	html {
+		font-family: 'Times New Roman', serif;
+		font-size: 12px;
+	}
+}
